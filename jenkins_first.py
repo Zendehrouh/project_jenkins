@@ -1,5 +1,5 @@
 
-import json
+#import json
 
 class ClassName():
     """make a class with two input ."""
@@ -9,7 +9,7 @@ class ClassName():
         self.user = user
         self.cred = cred
 
-    def to_jsonFile()
-        f = {"cred" : cred, "user" : user}
-        json_file = json.dumps(f)
-        print(json_file)
+    def toJsonFile(self):
+        f = {"cred" : self.cred, "user" : self.user}
+        #json_file = json.dumps(f)
+        return print("json file is:", f)
