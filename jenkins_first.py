@@ -13,3 +13,10 @@ class ClassName():
         f = {"cred" : self.cred, "user" : self.user}
         #json_file = json.dumps(f)
         return print("json file is:", f)
+
+
+if __name__ == "__main__":
+    a = ClassName("user", 12345)
+    print(a.user)
+    print(a.cred)
+    a.toJsonFile()
